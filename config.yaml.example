@@ -1,0 +1,10 @@
+myq:
+  email: your@email.com
+  password: your_password
+
+google_sheets:
+  credentials_file: credentials.json  # Google Service Account JSON key file
+  spreadsheet_id: YOUR_SPREADSHEET_ID  # from the URL: /d/<ID>/edit
+  worksheet_name: BreakLog
+
+polling_interval_seconds: 30

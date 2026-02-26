@@ -1,0 +1,15 @@
+[Unit]
+Description=Break Time Tracker (MyQ Garage)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/break-tracker
+ExecStart=/home/pi/break-tracker/venv/bin/python tracker.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
